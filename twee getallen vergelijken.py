@@ -1,5 +1,9 @@
-max = 20
-b = 18
+a = int(input("Vul hier een getal in"))
+b = int(input("Vul hier een getal in"))
 
-if max > b:
-    print("a is het grootste getal: 20 ")
+if a > b:
+    print("a is het grootste getal:" + str(a))
+
+elif a < b:
+    print("b is het grootste getal:" + str(b))
+    
