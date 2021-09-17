@@ -17,21 +17,21 @@ if antwoord >= 4:
                             if antwoord >= 150:
                                 antwoord = int(input("Hoeveel weegt u in kg?"))
                                 if antwoord >= 90:
-                                    print("Gefeliciteerd! U hebt het certificaat: Overleven met gevaarlijk personeel!")
-                        if antwoord <= 10:
-                            print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")
+                                    geslaagd = True
                 if antwoord =="V":
                     antwoord = input("heeft u rood krulhaar? Y/N").upper()
                     if antwoord =="Y":
                         antwoord = int(input("Hoelang is uw rode krulhaar in cm?"))
                         if antwoord >= 20:
-                            antwoord = int(input("Hoeveel weegt u in kg?"))
-                            if antwoord >= 90:
-                                geslaagd = True
-                        if antwoord <= 20:
-                            print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")            
-                    if antwoord =="N":
-                        print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")
+                            antwoord = int(input("Hoelang bent u in cm?"))
+                            if antwoord >= 150:
+                                antwoord = int(input("Hoeveel weegt u in kg?"))
+                                if antwoord >= 90:
+                                    geslaagd = True
+                            if antwoord <= 20:
+                                print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")            
+                        if antwoord =="N":
+                            print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")
 if geslaagd == True:
     print("Gefeliciteerd! U hebt het certificaat: Overleven met gevaarlijk personeel!")
 else:
