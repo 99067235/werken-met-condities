@@ -17,7 +17,13 @@ if antwoord >= 4:
                             if antwoord >= 150:
                                 antwoord = int(input("Hoeveel weegt u in kg?"))
                                 if antwoord >= 90:
-                                    geslaagd = True
+                                    antwoord = float(input("Welke schoenmaat heeft u?"))
+                                    if antwoord >= 40:
+                                        antwoord = int(input("Hoeveel huisdieren heeft u?"))
+                                        if antwoord <= 4:
+                                            antwoord = (input("Welke kleur vind u mooier: blauw of oranje?"))
+                                            if antwoord == "blauw":
+                                                geslaagd = True
                 if antwoord =="V":
                     antwoord = input("heeft u rood krulhaar? Y/N").upper()
                     if antwoord =="Y":
@@ -27,11 +33,13 @@ if antwoord >= 4:
                             if antwoord >= 150:
                                 antwoord = int(input("Hoeveel weegt u in kg?"))
                                 if antwoord >= 90:
-                                    geslaagd = True
-                            if antwoord <= 20:
-                                print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")            
-                        if antwoord =="N":
-                            print("U bent helaas niet geschikt voor het beroep ruimtevuilnisman")
+                                    antwoord = float(input("Welke schoenmaat heeft u?"))
+                                    if antwoord >= 40:
+                                        antwoord = int(input("Hoeveel huisdieren heeft u?"))
+                                        if antwoord <= 4:
+                                            antwoord = (input("Welke kleur vind u mooier: blauw of oranje?"))
+                                            if antwoord == "blauw":
+                                                geslaagd = True
 if geslaagd == True:
     print("Gefeliciteerd! U hebt het certificaat: Overleven met gevaarlijk personeel!")
 else:
