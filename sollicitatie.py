@@ -23,7 +23,9 @@ if antwoord >= 4:
                                         if antwoord <= 4:
                                             antwoord = (input("Welke kleur vind u mooier: blauw of oranje?"))
                                             if antwoord == "blauw":
-                                                geslaagd = True
+                                                antwoord = int(input("Hoever kunt u springen in cm?"))
+                                                if antwoord >= 100:
+                                                    geslaagd = True
                 if antwoord =="V":
                     antwoord = input("heeft u rood krulhaar? Y/N").upper()
                     if antwoord =="Y":
@@ -39,7 +41,9 @@ if antwoord >= 4:
                                         if antwoord <= 4:
                                             antwoord = (input("Welke kleur vind u mooier: blauw of oranje?"))
                                             if antwoord == "blauw":
-                                                geslaagd = True
+                                                antwoord = int(input("Hoever kunt u springen in cm?"))
+                                                if antwoord >= 100:
+                                                    geslaagd = True
 if geslaagd == True:
     print("Gefeliciteerd! U hebt het certificaat: Overleven met gevaarlijk personeel!")
 else:
